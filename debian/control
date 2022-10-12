@@ -1,0 +1,31 @@
+Source: libtest-trap-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               libmodule-build-perl
+Build-Depends-Indep: perl,
+                     libdata-dump-perl,
+                     libtest-refcount-perl,
+                     perl (>= 5.21.6) | libtest-simple-perl (>= 1.001010) | libtest-tester-perl
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-trap-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-trap-perl.git
+Homepage: https://metacpan.org/release/Test-Trap
+
+Package: libtest-trap-perl
+Architecture: all
+Depends: ${perl:Depends},
+         ${misc:Depends},
+         libdata-dump-perl,
+         perl (>= 5.21.6) | libtest-simple-perl (>= 1.001010) | libtest-tester-perl
+Description: test module to trap exit codes, exceptions, output, etc.
+ Test::Trap is a Perl test module useful primarily (but not exclusively) for
+ test scripts: a block eval on steroids, configurable and extensible, but by
+ default trapping (Perl) STDOUT, STDERR, warnings, exceptions, would-be exit
+ codes, and return values from boxed blocks of test code.
+ .
+ The values collected by the latest trap can then be queried or tested through
+ as a special trap object.

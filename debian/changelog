@@ -1,0 +1,111 @@
+libtest-trap-perl (0.3.4-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.2.1.
+  * Bump debhelper compatibility level to 10.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 20 Oct 2018 18:50:22 +0200
+
+libtest-trap-perl (0.3.3-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Update Test::Tester build dependency.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Fabrizio Regalli from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  * New upstream release.
+  * Change order of alternative (build) dependencies.
+  * Bump debhelper compatibility level to 9.
+  * Add /me to debian/copyright.
+  * Declare compliance with Debian Policy 4.1.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 01 Nov 2017 19:39:54 +0100
+
+libtest-trap-perl (0.3.2-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Unconditionally build depend on libmodule-build-perl.
+  * Add debian/upstream/metadata
+  * Import upstream version 0.3.2
+  * Declare compliance with Debian Policy 3.9.6.
+  * Add alternative (build) dependency for Test::Tester.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 May 2015 20:02:01 +0200
+
+libtest-trap-perl (0.2.4-1) unstable; urgency=medium
+
+  * Strip trailing slash from metacpan URLs.
+  * New upstream release.
+  * Update years of upstream copyright and upstream's email address.
+  * Add build dependency on libtest-refcount-perl (used in new test).
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 06 Apr 2014 18:23:39 +0200
+
+libtest-trap-perl (0.2.3-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+  * Imported Upstream version 0.2.3
+  * Declare compliance with Debian policy 3.9.5
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 04 Jan 2014 10:10:51 +0100
+
+libtest-trap-perl (0.2.2-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Remove alternative (build) dependencies that are already satisfied
+    in oldstable.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Fabrizio Regalli ]
+  * Imported Upstream version 0.2.2
+  * Bump Standards-Version to 3.9.3
+  * Bump debhelper to (>= 8)
+  * Update d/compat to 8
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Added myself to Uploaders and Copyright
+  * Update copyright using copyright-format 1.0
+  * Removed 'GNU/Linux' from both license text
+  * Update copyright year
+  * Fixed path for GPL-1+ license
+  * Removed version from libtest-tester-perl Depends and B-D-I
+  * Removed no more necessary d/clean
+  * Added perl (>= 5.11.3) | libmodule-build-perl (>= 0.360000) to B-D
+
+ -- Fabrizio Regalli <fabreg@fabreg.it>  Fri, 02 Mar 2012 15:14:41 +0100
+
+libtest-trap-perl (0.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add debian/clean to remove created test files.
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 30 Dec 2009 19:16:48 +0100
+
+libtest-trap-perl (0.2.0-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #498538)
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Tue, 17 Nov 2009 12:48:40 -0500
